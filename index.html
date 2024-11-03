@@ -5,35 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>十二星座資訊</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <!-- 首頁區域 -->
     <div class="container" id="home-page">
         <h1>選擇你的星座</h1>
-            <!-- 12星座的按鈕 -->
-            <button class="zodiac-button aries" data-sign="aries">牡羊座</button>
-            <button class="zodiac-button taurus" data-sign="taurus">金牛座</button>
-            <button class="zodiac-button gemini" data-sign="gemini">雙子座</button>
-            <button class="zodiac-button cancer" data-sign="cancer">巨蟹座</button>
-            <p><button class="zodiac-button leo" data-sign="leo">獅子座</button>
-            <button class="zodiac-button virgo" data-sign="virgo">處女座</button>
-            <button class="zodiac-button libra" data-sign="libra">天秤座</button>
-            <button class="zodiac-button scorpio" data-sign="scorpio">天蠍座</button></p>
-            <p><button class="zodiac-button sagittarius" data-sign="sagittarius">射手座</button>
-            <button class="zodiac-button capricorn" data-sign="capricorn">摩羯座</button>
-            <button class="zodiac-button aquarius" data-sign="aquarius">水瓶座</button>
-            <button class="zodiac-button pisces" data-sign="pisces">雙魚座</button></p>
+        <!-- 12星座的按鈕 -->
+        <button class="zodiac-button" data-sign="aries">牡羊座</button>
+        <button class="zodiac-button" data-sign="taurus">金牛座</button>
+        <button class="zodiac-button" data-sign="gemini">雙子座</button>
+        <button class="zodiac-button" data-sign="cancer">巨蟹座</button>
+        <button class="zodiac-button" data-sign="leo">獅子座</button>
+        <button class="zodiac-button" data-sign="virgo">處女座</button>
+        <button class="zodiac-button" data-sign="libra">天秤座</button>
+        <button class="zodiac-button" data-sign="scorpio">天蠍座</button>
+        <button class="zodiac-button" data-sign="sagittarius">射手座</button>
+        <button class="zodiac-button" data-sign="capricorn">摩羯座</button>
+        <button class="zodiac-button" data-sign="aquarius">水瓶座</button>
+        <button class="zodiac-button" data-sign="pisces">雙魚座</button>
+        <button id="random-zodiac">隨機顯示星座</button>
+    </div>
 
-        </div>
+    <!-- 星座頁面 -->
+    <div id="zodiac-page" style="display:none; text-align: center;">
+        <h2 id="zodiac-name"></h2>
+        <img id="zodiac-image" src="" alt="Zodiac Image" style="display:block; margin: 0 auto;">
+        <p id="zodiac-dates"></p>
+        <p id="zodiac-traits"></p>
+        <button id="back-home-button">返回首頁</button>
+    </div>
 
-        <div id="zodiac-page" style="display:none; text-align: center;"> <!-- 將文本置中 -->
-    <h2 id="zodiac-name"></h2>
-    <img id="zodiac-image" src="" alt="Zodiac Image" style="display:block; margin: 0 auto;">  <!-- 圖片置中 -->
-    <p id="zodiac-dates"></p>
-    <p id="zodiac-traits"></p>
-    <button id="back-home-button">返回首頁</button>
-</div>
+    <script src="script.js"></script>
+</body>
+</html>
 
     </div>
 
