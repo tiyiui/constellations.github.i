@@ -98,9 +98,3 @@ button {
     opacity: 1 !important;
 }
 
-
-.scorpio:hover,
-.cancer:hover,
-.pisces:hover {
-    background-color: rgba(0, 191, 255, 0.8); /* 懸停時藍色 */
-}
