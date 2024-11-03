@@ -1,100 +1,109 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0; 
+    color: #333; 
+    margin: 0; 
+    padding: 20px; 
+} 
 
-.container {
-    text-align: center;
-    margin-top: 50px;
-}
+.container { 
+    text-align: center; 
+    margin-top: 50px; 
+} 
 
-#zodiac-page {
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease; /* Smooth transition effect */
-}
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
+#zodiac-page { 
+    text-align: center; /* 使內容水平置中 */ 
+} 
 
-#zodiac-container {
-    margin: 20px 0;
-}
+button { 
+    padding: 10px 20px; 
+    margin: 10px; 
+    font-size: 16px; 
+    cursor: pointer; 
+} 
 
-.zodiac-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s; /* Smoother hover and click effects */
-}
+#zodiac-container { 
+    margin: 20px 0; 
+} 
 
-.zodiac-button:hover {
-    background-color: #45a049;
-    transform: scale(1.05); /* Button grows slightly on hover */
-}
+.zodiac-button { 
+    background-color: #4CAF50; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    margin: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    border-radius: 5px; 
+} 
 
-#info-container {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+.zodiac-button:hover { 
+    background-color: #45a049; 
+} 
 
-#zodiac-name {
-    font-size: 24px;
-    color: #4CAF50;
-}
+#info-container { 
+    margin-top: 30px; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+} 
 
-#zodiac-dates, #zodiac-traits {
-    font-size: 18px;
-}
+#zodiac-name { 
+    font-size: 24px; 
+    color: #4CAF50; 
+} 
 
-/* Zodiac button color classes */
-.aries, .leo, .sagittarius {
-    background-color: red;
-    color: white;
-}
-.capricorn, .taurus, .virgo {
-    background-color: #FFD700;
-    color: white;
-}
-.gemini, .libra, .aquarius {
-    background-color: #ADFF2F;
-    color: white;
-}
-.scorpio, .cancer, .pisces {
-    background-color: #00BFFF;
-    color: white;
-}
+#zodiac-dates, 
+#zodiac-traits { 
+    font-size: 18px; 
+} 
 
-/* Specific hover effects for zodiac buttons */
-.aries:hover, .leo:hover, .sagittarius:hover {
-    background-color: rgba(255, 0, 0, 0.8);
-}
-.capricorn:hover, .taurus:hover, .virgo:hover {
-    background-color: rgba(255, 215, 0, 0.8);
-}
-.gemini:hover, .libra:hover, .aquarius:hover {
-    background-color: rgba(173, 255, 47, 0.8);
-}
-.scorpio:hover, .cancer:hover, .pisces:hover {
-    background-color: rgba(0, 191, 255, 0.8);
-}
+.aries, .leo, .sagittarius { 
+    background-color: red; /* 紅色 */ 
+    color: white; /* 字體顏色 */ 
+} 
 
-/* Fade-in effect when displaying #zodiac-page */
-.show-zodiac-page {
-    opacity: 1 !important;
-}
+.capricorn, .taurus, .virgo { 
+    background-color: #FFD700; /* 土黃色 */ 
+    color: white; /* 字體顏色 */ 
+} 
 
+.gemini, .libra, .aquarius { 
+    background-color: #ADFF2F; /* 綠色 */ 
+    color: white; /* 字體顏色 */ 
+} 
+
+.scorpio, .cancer, .pisces { 
+    background-color: #00BFFF; /* 藍色 */ 
+    color: white; /* 字體顏色 */ 
+} 
+
+.zodiac-button { 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin: 5px; /* 按鈕間距 */ 
+    font-size: 16px; /* 字體大小 */ 
+} 
+
+.zodiac-button:hover { 
+    opacity: 0.8; /* 鼠標懸停時的透明度效果 */ 
+} 
+
+.aries:hover, .leo:hover, .sagittarius:hover { 
+    background-color: rgba(255, 0, 0, 0.8); /* 懸停時紅色 */ 
+} 
+
+.capricorn:hover, .taurus:hover, .virgo:hover { 
+    background-color: rgba(255, 215, 0, 0.8); /* 懸停時土黃色 */ 
+} 
+
+.gemini:hover, .libra:hover, .aquarius:hover { 
+    background-color: rgba(173, 255, 47, 0.8); /* 懸停時綠色 */ 
+} 
+
+.scorpio:hover, .cancer:hover, .pisces:hover { 
+    background-color: rgba(0, 191, 255, 0.8); /* 懸停時藍色 */ 
+}
