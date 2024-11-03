@@ -21,9 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const zodiacTraits = document.getElementById('zodiac-traits');
     const zodiacImage = document.getElementById('zodiac-image');
     const backHomeButton = document.getElementById('back-home-button');
-    const randomButton = document.getElementById('random-zodiac');
 
-    // 星座按鈕點擊事件
     document.querySelectorAll('.zodiac-button').forEach(button => {
         button.addEventListener('click', () => {
             const sign = button.getAttribute('data-sign');
@@ -33,22 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 隨機顯示星座
-    randomButton.addEventListener('click', () => {
-        const signs = Object.keys(zodiacInfo);
-        const randomSign = signs[Math.floor(Math.random() * signs.length)];
-        displayZodiacInfo(zodiacInfo[randomSign]);
-    });
-
-    // 返回首頁按鈕事件
     backHomeButton.addEventListener('click', () => {
         zodiacPage.style.display = 'none';
         homePage.style.display = 'block';
     });
 
-    // 顯示星座資訊的函數
     function displayZodiacInfo(zodiac) {
-        console.log('Displaying zodiac info for:', zodiac.name); 
         zodiacName.textContent = zodiac.name;
         zodiacDates.textContent = `日期範圍: ${zodiac.dates}`;
         zodiacTraits.textContent = `性格特點: ${zodiac.traits}`;
@@ -58,4 +46,5 @@ document.addEventListener('DOMContentLoaded', () => {
         zodiacPage.style.display = 'block';
     }
 });
+
 
