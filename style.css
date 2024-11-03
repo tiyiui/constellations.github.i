@@ -35,10 +35,12 @@ button {
     cursor: pointer; 
     font-size: 16px; 
     border-radius: 5px; 
+    transition: transform 0.2s, background-color 0.3s; /* 增加過渡效果 */
 } 
 
 .zodiac-button:hover { 
-    background-color: #45a049; 
+    background-color: #45a049; /* 鼠標懸停時改變顏色 */
+    transform: scale(1.1); /* 按鈕放大 */
 } 
 
 #info-container { 
@@ -79,19 +81,24 @@ button {
     color: white; /* 字體顏色 */ 
 } 
 
-.zodiac-button { 
-    padding: 10px 15px; 
+#random-button { 
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
     border: none; 
     border-radius: 5px; 
-    cursor: pointer; 
-    margin: 5px; /* 按鈕間距 */ 
-    font-size: 16px; /* 字體大小 */ 
+    background-color: #4CAF50; /* 隨機按鈕顏色 */
+    color: white; /* 字體顏色 */
+    transition: transform 0.2s, background-color 0.3s; /* 增加過渡效果 */
 } 
 
-.zodiac-button:hover { 
-    opacity: 0.8; /* 鼠標懸停時的透明度效果 */ 
+#random-button:hover { 
+    background-color: #45a049; /* 懸停時改變顏色 */
+    transform: scale(1.1); /* 按鈕放大 */
 } 
 
+/* 每個星座的顏色懸停效果 */
 .aries:hover, .leo:hover, .sagittarius:hover { 
     background-color: rgba(255, 0, 0, 0.8); /* 懸停時紅色 */ 
 } 
@@ -107,32 +114,3 @@ button {
 .scorpio:hover, .cancer:hover, .pisces:hover { 
     background-color: rgba(0, 191, 255, 0.8); /* 懸停時藍色 */ 
 }
-.zodiac-button {
-            transition: transform 0.2s, background-color 0.3s;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 5px;
-            font-size: 16px;
-        }
-
-        .zodiac-button:hover {
-            transform: scale(1.1); /* 按鈕放大 */
-            background-color: #f0f0f0; /* 按鈕顏色變化 */
-        }
-
-        #random-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            transition: transform 0.2s, background-color 0.3s;
-        }
-
-        #random-button:hover {
-            transform: scale(1.1);
-            background-color: #f0f0f0;
-        }
