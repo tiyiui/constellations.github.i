@@ -86,6 +86,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // 取得所有星座按鈕，並為它們添加點擊事件
     const buttons = document.querySelectorAll('.zodiac-button');
     buttons.forEach(button => {
+        // 鼠標懸停事件
+        button.addEventListener('mouseover', () => {
+            button.style.transform = 'scale(1.05)'; // 放大效果
+            button.style.transition = 'transform 0.2s'; // 過渡效果
+        });
+
+        // 鼠標移開事件
+        button.addEventListener('mouseout', () => {
+            button.style.transform = 'scale(1)'; // 恢復原大小
+        });
+
+        // 按鈕點擊事件
         button.addEventListener('click', () => {
             const sign = button.getAttribute('data-sign');
             const zodiac = zodiacInfo[sign];
@@ -101,13 +113,13 @@ document.addEventListener('DOMContentLoaded', () => {
             zodiacPage.style.display = 'block';
             setTimeout(() => {
                 zodiacPage.classList.add('fade-in');
-            }, 10); // 添加小延迟以确保过渡效果
+            }, 10); // 添加小延遲以確保過渡效果
         });
     });
 
     // 返回首頁按鈕事件
     backHomeButton.addEventListener('click', () => {
-        zodiacPage.classList.remove('fade-in'); // 移除动画类
+        zodiacPage.classList.remove('fade-in'); // 移除動畫類
         zodiacPage.style.display = 'none';
         homePage.style.display = 'block';
     });
@@ -129,7 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
         zodiacPage.style.display = 'block';
         setTimeout(() => {
             zodiacPage.classList.add('fade-in');
-        }, 10); // 添加小延迟以确保过渡效果
+        }, 10); // 添加小延遲以確保過渡效果
     });
 });
+
 
