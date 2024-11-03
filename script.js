@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 顯示星座資訊的函數
     function displayZodiacInfo(zodiac) {
+        console.log('Displaying zodiac info for:', zodiac.name); 
         zodiacName.textContent = zodiac.name;
         zodiacDates.textContent = `日期範圍: ${zodiac.dates}`;
         zodiacTraits.textContent = `性格特點: ${zodiac.traits}`;
