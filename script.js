@@ -197,12 +197,11 @@ document.addEventListener('DOMContentLoaded', () => {
         zodiacRulingPlanet.textContent = `守護星: ${zodiac.rulingPlanet}`;
 
         // 隱藏首頁，顯示星座詳情
-        homePage.style.display = 'none';
+         homePage.style.display = 'none';
         zodiacPage.style.display = 'block';
         setTimeout(() => {
             zodiacPage.classList.add('fade-in');
-        }, 10);
+        }, 10); // 添加小延遲以確保過渡效果
     });
 });
-
 
