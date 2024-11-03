@@ -101,17 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
             zodiacPage.style.display = 'block';
         });
     });
-// 隨機星座展示功能
-randomButton.addEventListener('click', () => {
-    const signs = Object.keys(zodiacInfo);
-    const randomSign = signs[Math.floor(Math.random() * signs.length)];
-    const zodiac = zodiacInfo[randomSign];
 
-    // 更新星座頁面的內容
-    zodiacName.textContent = zodiac.name;
-    zodiacImage.src = zodiac.image;
-    zodiacDates.textContent = `日期範圍: ${zodiac.dates}`;
-    zodiacTraits.textContent = `性格特點: ${zodiac.traits}`;
 
     
     // 返回首頁按鈕事件
