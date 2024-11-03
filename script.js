@@ -138,13 +138,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // 取得所有星座按鈕，並為它們添加點擊事件
     const buttons = document.querySelectorAll('.zodiac-button');
     buttons.forEach(button => {
-        // 鼠標懸停事件
+        // 懸停事件
         button.addEventListener('mouseover', () => {
             button.style.transform = 'scale(1.05)'; // 放大效果
             button.style.transition = 'transform 0.2s'; // 過渡效果
         });
 
-        // 鼠標移開事件
+        // 移開事件
         button.addEventListener('mouseout', () => {
             button.style.transform = 'scale(1)'; // 恢復原大小
         });
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
         zodiacRulingPlanet.textContent = `守護星: ${zodiac.rulingPlanet}`;
 
         // 隱藏首頁，顯示星座詳情
-         homePage.style.display = 'none';
+        homePage.style.display = 'none';
         zodiacPage.style.display = 'block';
         setTimeout(() => {
             zodiacPage.classList.add('fade-in');
