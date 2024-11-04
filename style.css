@@ -57,7 +57,11 @@ button {
 } 
 
 #zodiac-dates, 
-#zodiac-traits { 
+#zodiac-traits,
+#zodiac-career,
+#zodiac-love-match,
+#zodiac-element,
+#zodiac-ruling-planet{ 
     font-size: 18px; 
 } 
 
