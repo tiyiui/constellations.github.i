@@ -7,13 +7,9 @@ body {
 } 
 
 .container { 
-    text-align: center; 
+    text-align: center; /* 這裡保持可以讓容器內的元素（如按鈕）水平居中 */
     margin-top: 50px; 
 } 
-
-//#zodiac-page { 
-    text-align: center; /* 使內容水平置中 */ 
-} //
 
 button { 
     padding: 10px 20px; 
@@ -35,12 +31,12 @@ button {
     cursor: pointer; 
     font-size: 16px; 
     border-radius: 5px; 
-    transition: transform 0.2s, background-color 0.3s; /* 增加過渡效果 */
+    transition: transform 0.2s, background-color 0.3s; 
 } 
 
 .zodiac-button:hover { 
-    background-color: #45a049; /* 鼠標懸停時改變顏色 */
-    transform: scale(1.1); /* 按鈕放大 */
+    background-color: #45a049; 
+    transform: scale(1.1); 
 } 
 
 #info-container { 
@@ -49,6 +45,10 @@ button {
     background-color: #fff; 
     border-radius: 10px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; /* 設定最大寬度以便內容更易讀 */
+    margin-left: auto; /* 左側自動邊距 */
+    margin-right: auto; /* 右側自動邊距 */
+    text-align: left; /* 內容向左對齊 */
 } 
 
 #zodiac-name { 
@@ -61,30 +61,29 @@ button {
 #zodiac-career,
 #zodiac-love-match,
 #zodiac-element,
-#zodiac-ruling-planet{ 
+#zodiac-ruling-planet { 
     font-size: 18px; 
     line-height: 1.6;
-    text-align: left;
 } 
 
 .aries, .leo, .sagittarius { 
-    background-color: red; /* 紅色 */ 
-    color: white; /* 字體顏色 */ 
+    background-color: red; 
+    color: white; 
 } 
 
 .capricorn, .taurus, .virgo { 
-    background-color: #FFD700; /* 土黃色 */ 
-    color: white; /* 字體顏色 */ 
+    background-color: #FFD700; 
+    color: white; 
 } 
 
 .gemini, .libra, .aquarius { 
-    background-color: #ADFF2F; /* 綠色 */ 
-    color: white; /* 字體顏色 */ 
+    background-color: #ADFF2F; 
+    color: white; 
 } 
 
 .scorpio, .cancer, .pisces { 
-    background-color: #00BFFF; /* 藍色 */ 
-    color: white; /* 字體顏色 */ 
+    background-color: #00BFFF; 
+    color: white; 
 } 
 
 #random-button { 
@@ -94,29 +93,29 @@ button {
     cursor: pointer; 
     border: none; 
     border-radius: 5px; 
-    background-color: #4CAF50; /* 隨機按鈕顏色 */
-    color: white; /* 字體顏色 */
-    transition: transform 0.2s, background-color 0.3s; /* 增加過渡效果 */
+    background-color: #4CAF50; 
+    color: white; 
+    transition: transform 0.2s, background-color 0.3s; 
 } 
 
 #random-button:hover { 
-    background-color: #45a049; /* 懸停時改變顏色 */
-    transform: scale(1.1); /* 按鈕放大 */
+    background-color: #45a049; 
+    transform: scale(1.1); 
 } 
 
 /* 每個星座的顏色懸停效果 */
 .aries:hover, .leo:hover, .sagittarius:hover { 
-    background-color: rgba(255, 0, 0, 0.8); /* 懸停時紅色 */ 
+    background-color: rgba(255, 0, 0, 0.8); 
 } 
 
 .capricorn:hover, .taurus:hover, .virgo:hover { 
-    background-color: rgba(255, 215, 0, 0.8); /* 懸停時土黃色 */ 
+    background-color: rgba(255, 215, 0, 0.8); 
 } 
 
 .gemini:hover, .libra:hover, .aquarius:hover { 
-    background-color: rgba(173, 255, 47, 0.8); /* 懸停時綠色 */ 
+    background-color: rgba(173, 255, 47, 0.8); 
 } 
 
 .scorpio:hover, .cancer:hover, .pisces:hover { 
-    background-color: rgba(0, 191, 255, 0.8); /* 懸停時藍色 */ 
+    background-color: rgba(0, 191, 255, 0.8); 
 }
