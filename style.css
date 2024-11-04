@@ -101,3 +101,17 @@ button, .zodiac-button, #random-button {
 .scorpio:hover, .cancer:hover, .pisces:hover { 
     background-color: rgba(30, 144, 255, 0.8); 
 }
+
+/* 返回首頁的按鈕樣式 */
+.back-button {
+    font-size: 18px; /* 統一字體大小 */
+    color: white; 
+    background-color: #007BFF; /* 按鈕顏色 */
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    margin-top: 20px; 
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* 懸停時改變顏色 */
+}
