@@ -11,9 +11,9 @@ body {
     margin-top: 50px; 
 } 
 
-#zodiac-page { 
+//#zodiac-page { 
     text-align: center; /* 使內容水平置中 */ 
-} 
+} //
 
 button { 
     padding: 10px 20px; 
@@ -63,6 +63,7 @@ button {
 #zodiac-element,
 #zodiac-ruling-planet{ 
     font-size: 18px; 
+    line-height: 1.6;
 } 
 
 .aries, .leo, .sagittarius { 
